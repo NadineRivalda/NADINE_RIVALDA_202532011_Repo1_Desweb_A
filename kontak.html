@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Jalur Sunyi</title>
+</head>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000EE" vlink="#551A8B">
+
+  <header>
+    <h1>Jalur Sunyi</h1>
+    <p>Catatan perjalanan ke sudut Nusantara yang masih berbisik, bukan berteriak</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="destinasi.html">Destinasi</a></li>
+        <li><a href="artikel.html">Artikel</a></li>
+        <li><a href="tips.html">Tips</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr>
+
+  <main>
+    <h2>Titip Satu Tempat Sunyimu</h2>
+    <p>Pernah menemukan tempat yang membuatmu diam sejenak? Ceritakan suasananya, bukan sekadar lokasinya. Kolom bertanda * wajib diisi.</p>
+
+    <form action="kontak.html" method="get">
+      <fieldset>
+        <legend>Tentang kamu</legend>
+
+        <p>
+          <label for="nama">Nama Lengkap *</label><br>
+          <input type="text" id="nama" name="nama" placeholder="Contoh: Nadine" required minlength="3">
+        </p>
+
+        <p>
+          <label for="email">Email *</label><br>
+          <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+        </p>
+
+        <p>
+          <label for="tanggal">Kapan kamu ke sana?</label><br>
+          <input type="date" id="tanggal" name="tanggal">
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Tentang tempatnya</legend>
+
+        <p>
+          <label for="tempat">Nama Tempat *</label><br>
+          <input type="text" id="tempat" name="tempat" required>
+        </p>
+
+        <p>
+          <label for="wilayah">Wilayah *</label><br>
+          <select id="wilayah" name="wilayah" required>
+            <option value="">-- Pilih Wilayah --</option>
+            <option value="sumatera">Sumatera</option>
+            <option value="jawa">Jawa</option>
+            <option value="kalimantan">Kalimantan</option>
+            <option value="sulawesi">Sulawesi</option>
+            <option value="nusa-tenggara">Bali &amp; Nusa Tenggara</option>
+            <option value="maluku-papua">Maluku &amp; Papua</option>
+          </select>
+        </p>
+
+        <p>Suasana yang paling terasa *</p>
+        <p>
+          <input type="radio" id="s-hening" name="suasana" value="hening" required>
+          <label for="s-hening">Hening</label>
+          <input type="radio" id="s-cahaya" name="suasana" value="cahaya">
+          <label for="s-cahaya">Cahaya</label>
+          <input type="radio" id="s-air" name="suasana" value="air">
+          <label for="s-air">Air</label>
+          <input type="radio" id="s-budaya" name="suasana" value="budaya">
+          <label for="s-budaya">Budaya</label>
+        </p>
+
+        <p>
+          <label for="cerita">Apa yang kamu rasakan di sana? *</label><br>
+          <textarea id="cerita" name="cerita" rows="5" cols="40" required minlength="20"></textarea>
+        </p>
+      </fieldset>
+
+      <p>
+        <input type="checkbox" id="setuju" name="setuju" required>
+        <label for="setuju">Saya setuju ceritaku ditampilkan tanpa titik koordinat tepatnya *</label>
+      </p>
+
+      <p>
+        <button type="submit">Kirim Cerita</button>
+        <button type="reset">Ulangi</button>
+      </p>
+    </form>
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>&copy; 2026 Jalur Sunyi - Tugas Praktikum Desain Web</p>
+    <p>Dibuat oleh Nadine Rivalda (202532011)</p>
+  </footer>
+
+</body>
+</html>
